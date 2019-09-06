@@ -1,4 +1,4 @@
-var scores, roll; 
+var scores, roll1, roll2; 
 
 
 
@@ -27,10 +27,30 @@ document.querySelector(".player-1-panel").style.display='block';
 
 document.querySelector(".intro").style.display='block';
 document.querySelector('.players').style.display='none';
+
+}
+
+function rockIt (){
+	var result1 = Math.floor(Math.random() * 3) + 1;
+	var result2 = Math.floor(Math.random() * 3) + 1;
+
+	if (result1 === result2){
+	result1 = result2 + 1;
+	}
+
+var p1Result = document.querySelector('.rock')
+var p2Result = document.querySelector('.paper')
+
+roll1 = p1Result.src = 'piece-' + result1 + '.png';
+roll2 = p2Result.src = 'piece-' + result2 + '.png';
+
+document.querySelector(".player-2-panel").style.display='block';
+document.querySelector(".player-1-panel").style.display='block';
+
 }
 
 
-document.querySelector('.playOn').addEventListener('click', choose);
+document.querySelector('.playOn').addEventListener('click', rockIt);
 document.querySelector('.players').addEventListener('click', choose);
 document.querySelector(".intro").style.display='none';
 document.querySelector(".player-2-panel").style.display='none';
