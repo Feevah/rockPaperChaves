@@ -2,3 +2,26 @@ img {
 	height: 150px;
 	width: 150px;
 }
+
+
+
+body {
+    background-color: #45c4bc;
+    font-size: 2em;
+    color: white;
+}
+.play,
+.center {
+	 display: flex;
+     justify-content: center;
+}
+.player-1-panel {
+	width: 50%;
+    float: left;
+    height: 600px;
+}
+.player-2-panel {
+    width: 50%;
+    float: right;
+    height: 600px;
+}
