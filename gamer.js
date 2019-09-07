@@ -49,6 +49,11 @@ var p2Result = document.querySelector('.paper')
 roll1 = p1Result.src = 'piece-' + result1 + '.png';
 roll2 = p2Result.src = 'piece-' + result2 + '.png';
 
+// roll again if equal
+// if (result1 === result2){
+// 	rockIt
+// }
+
 // updtae score
 
 if(result1 === 2 && result2 === 1){
