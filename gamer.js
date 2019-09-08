@@ -73,6 +73,21 @@ else {score2 += 1}
 document.getElementById('score-1').textContent = score1;
 document.getElementById('score-2').textContent = score2;
 
+if (score1 === 7){
+	document.querySelector('.chaves').classList.add('winner');
+	document.querySelector('.dude').innerHTML = "I win! I win!"
+	setTimeout(function(){alert("Player 1 wins! refresh the page to play again!");},
+		4000);
+}
+
+if (score2 === 7){
+	document.querySelector('.prof').classList.add('winner');
+	document.querySelector('.dudel').innerHTML = "I win! I win!"
+	setTimeout(function(){alert("Player 2 wins! refresh the page to play again!");},
+		4000);
+}
+
+
 
 // document.querySelector(".player-2-panel").style.display='block';
 // document.querySelector(".player-1-panel").style.display='block';
@@ -85,6 +100,6 @@ document.querySelector('.paper').style.display='none'
 
 document.querySelector('.playOn').addEventListener('click', rockIt);
 document.querySelector('.players').addEventListener('click', choose);
-document.querySelector(".intro").style.display='block';
-document.querySelector(".player-2-panel").style.display='block';
-document.querySelector(".player-1-panel").style.display='block';
+// document.querySelector(".intro").style.display='block';
+// document.querySelector(".player-2-panel").style.display='block';
+// document.querySelector(".player-1-panel").style.display='block';

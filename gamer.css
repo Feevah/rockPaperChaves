@@ -11,17 +11,72 @@ body {
     color: white;
 }
 
+button {
+    font-family: 'husky';
+    font-weight: bold;
+    font-size: 30px;
+    background: blue;
+    letter-spacing: 0.1em;
+    color:white;
+    border-radius:50px;
+    border: none;
+    margin: 0 auto;
+    padding: 5px;
+    display: block;
+    width: 75%;
+}
+
+.center {
+   display: inline-flex;
+   
+}
+
+@keyframes dance {
+  0% {transform: translateX(70px);}
+
+  25% {transform: rotate(0deg);}
+
+  75% {transform: rotate(360deg);}
+
+  100% {transform: translateX(-70px);}
+}
+
+@keyframes spiral {
+   0% {color: green;}
+   50% {color: blue;}
+  100% {color: yellow;}
+}
+
+.winner{
+    animation: dance 1s infinite linear alternate;
+}
+
+.dude {
+    font-size: 60px;
+    font-weight: bold;
+    animation: spiral 1s infinite linear alternate;
+    
+}
+
+.dudel {
+    font-size: 60px;
+    font-weight: bold;
+    animation: spiral 1s infinite linear alternate;
+}
+
 .center {
 	 display: flex;
      justify-content: center;
 }
 .player-1-panel {
-	width: 50%;
+   padding-left: 90px;
+	width: 30%;
     float: left;
     height: 600px;
 }
 .player-2-panel {
-    width: 50%;
+    
+    width: 30%;
     float: right;
     height: 600px;
 }
