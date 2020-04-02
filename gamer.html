@@ -6,28 +6,43 @@
 </head>
 <body>
 	<header class='center'>
-		<p class='intro'>This is Rock Paper Scissors Played <em>Chaves</em> Style.<button class="players">Random Player Select</button><br> Happy with your players? Push the button below to...<button class="playOn">Play</button>------------------  First player to 7 wins!  -----------------</p>
-		
-		
-	</header>
-	 
-	<div>
+        <div class="video">
+			<video class="video__content" autoplay muted loop>
+				<source src="img/chaves.mov" type="video/mp4">
+				Your browser is not supported			
+			</video>
+		</div>
+        
+        <h2 class='intro'>This is Rock Paper Scissors Played <em>Chaves</em> Style.</h2>
+        <h4 class="sub-intro">Choose your players then push play. 
+        <br>The first palyer to 7 wins!</h4>
+        
+    </header> 
+        <div class="characters">
             <div class="player-1-panel">
+                <h3 class="playas">Player 1</h3>
                 <div class="dude"></div>
-                <div class="player-name"><img class="chaves" src="man-1.png"><br>Player 1</div>
+                <div class="player-name"><img id="chaves" src="man-1.png"></div>
                 <div class="player-score" id="score-1">2</div>
-                <div><img class="rock" src="piece-2.png"></div>
+                <div><img class="items" id="rock" src="piece-2.png"></div>
             </div>
-            
+            <div class="container">
+                <button class="players">Player Select</button>
+                <button class="playOn">Play</button>
+            </div>   
             <div class="player-2-panel">
+                <h3 class="playas">Player 2</h3>
                 <div class="dudel"></div>
-                <div class="player-name"><img class="prof" src="man-2.png"><br>Player 2</div>
+                <div class="player-name"><img id="prof" src="man-2.png"></div>
                 <div class="player-score" id="score-2">1</div>
-                <div><img class="paper" src="piece-1.png"></div>
+                <div><img class="items" id="paper" src="piece-1.png"></div>
             </div>
-    </div>
+        </div>
+    
 
-	
+	<footer class="bye">
+        <a href="">Check out More Games</a> 
+    </footer>
    
 <script type="text/javascript" src="gamer.js"></script>
 </body>

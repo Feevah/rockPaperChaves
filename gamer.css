@@ -1,82 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+	margin: 0;
+}
+
+body {
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: #fff;
+	font-size: 2em;
+	color: white;
+	font-family: 'Righteous';
+	display: flex;
+	flex-direction: column;
+	/* margin: auto; */
+	padding: 20px;
+}
+.center {
+	height: 48vh;
+	background-image: radial-gradient(
+		rgba(253, 253, 253, 0.3),
+		rgba(61, 12, 12, 0.3)
+	);
+	background-size: cover;
+	background-position: center;
+	letter-spacing: 12px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	border: solid 5px rgb(61, 12, 12);
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: .5;
+	overflow: hidden;
+}
+.video__content {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.intro {
+	padding-top: 5rem;
+	padding-bottom: 0.3em;
+}
+.sub-intro {
+	color: rgb(61, 12, 12);
+}
+
 img {
 	height: 150px;
 	width: 150px;
 }
 
+.characters {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
 
-
-body {
-    background-color: #45c4bc;
-    font-size: 2em;
-    color: white;
+.container {
+	/* text-align: center; */
+	display: inline-block;
+	align-content: center;
+	align-items: center;
+	margin-bottom: 10%;
+	border-bottom: solid 5px rgb(61, 12, 12);
 }
 
 button {
-    font-family: 'husky';
-    font-weight: bold;
-    font-size: 30px;
-    background: blue;
-    letter-spacing: 0.1em;
-    color:white;
-    border-radius:50px;
-    border: none;
-    margin: 0 auto;
-    padding: 5px;
-    display: block;
-    width: 75%;
+	cursor: pointer;
+	/* font-family: 'husky'; */
+	font-weight: bold;
+	font-size: 20px;
+	background-color: rgb(61, 12, 12);
+	letter-spacing: 0.1em;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	display: block;
+	width: 200px;
+	margin: 1em 2em;
+	border: solid 2px #fff0f0;
 }
 
-.center {
-   display: inline-flex;
-   
+.playas {
+	padding-bottom: 1em;
+	/* color: rgb(161, 103, 15); */
 }
 
-@keyframes dance {
-  0% {transform: translateX(70px);}
-
-  25% {transform: rotate(0deg);}
-
-  75% {transform: rotate(360deg);}
-
-  100% {transform: translateX(-70px);}
-}
-
-@keyframes spiral {
-   0% {color: green;}
-   50% {color: blue;}
-  100% {color: yellow;}
-}
-
-.winner{
-    animation: dance 1s infinite linear alternate;
+.winner {
+	animation: dance 1s infinite linear alternate;
 }
 
 .dude {
-    font-size: 60px;
-    font-weight: bold;
-    animation: spiral 1s infinite linear alternate;
-    
+	font-size: 60px;
+	font-weight: bold;
+	animation: spiral 1s infinite linear alternate;
 }
 
 .dudel {
-    font-size: 60px;
-    font-weight: bold;
-    animation: spiral 1s infinite linear alternate;
+	font-size: 60px;
+	font-weight: bold;
+	animation: spiral 1s infinite linear alternate;
 }
 
-.center {
-	 display: flex;
-     justify-content: center;
-}
 .player-1-panel {
-   padding-left: 90px;
-	width: 30%;
-    float: left;
-    height: 600px;
+	width: 10em;
+	height: 415px;
+	display: inline;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1em 2em;
+	color: rgb(61, 12, 12);
+	overflow: hidden;
 }
+
 .player-2-panel {
-    
-    width: 30%;
-    float: right;
-    height: 600px;
+	display: inline;
+	margin: 0 auto;
+	width: 10em;
+	height: 420px;
+	text-align: center;
+	padding: 1em 2em;
+	color: rgb(61, 12, 12);
+	overflow: hidden;
+}
+
+.player-name {
+	display: inline-block;
+	align-items: center;
+}
+
+.items {
+	display: inline-block;
+	align-items: center;
+	padding-left: 1.5em;
+	padding-top: .3em;
+}
+
+.bye {
+	width: 100%;
+	height: 10vh;
+	margin: 0, auto;
+	background-image: radial-gradient(
+		#fff,
+		rgb(61, 12, 12)
+	);
+	text-align: center;
+	padding-top: 1em;
+}
+
+.bye a {
+	color: rgb(61, 12, 12);
+}
+
+@keyframes dance {
+	0% {
+		transform: translateX(70px);
+	}
+
+	25% {
+		transform: rotate(0deg);
+	}
+
+	75% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: translateX(-70px);
+	}
+}
+
+@keyframes spiral {
+	0% {
+		color: green;
+	}
+	50% {
+		color: blue;
+	}
+	100% {
+		color: yellow;
+	}
 }
