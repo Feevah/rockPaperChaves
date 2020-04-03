@@ -68,7 +68,7 @@ function rockIt() {
 
 	if (score1 === 7) {
 		document
-			.querySelector('.chaves')
+			.querySelector('#chaves')
 			.classList.add('winner');
 		document.querySelector('.dude').innerHTML =
 			'I win! I win!';
